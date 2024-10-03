@@ -13,14 +13,16 @@
 <div class="header">
     <h2><a href="https://codepen.io/RAFA3L" target="_blank" rel="noopener noreferrer">RAFA</a></h2>
     <div class="mid-spot" onclick="document.body.classList.toggle('gold');"></div>
-    <button class="contact-btn">
-      <span class="glow"></span>
-      <a href="https://www.example.com" class="contact-btn" style="text-decoration: none;">
+<button class="contact-btn" style="cursor: pointer;">
+    <span class="glow"></span>
     <span class="contact-btn-content">Contact Us</span>
-</a>
-    
-    </button>
-  
+</button>
+
+<script>
+    document.querySelector('.contact-btn').onclick = function() {
+        window.location.href = 'https://www.example.com';
+    };
+</script>
     <div class="spotlight">
       <div></div>
       <div></div>
